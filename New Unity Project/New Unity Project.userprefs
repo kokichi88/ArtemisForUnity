@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TestProcessor2.cs">
+    <Files>
+      <File FileName="Assets/Artemis_For_Unity/Aspect.cs" Line="24" Column="54" />
+      <File FileName="Assets/Scripts/Main.cs" Line="10" Column="24" />
+      <File FileName="Assets/Artemis_For_Unity/EntityWorld.cs" Line="382" Column="44" />
+      <File FileName="Assets/Scripts/TestProcessor2.cs" Line="21" Column="52" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

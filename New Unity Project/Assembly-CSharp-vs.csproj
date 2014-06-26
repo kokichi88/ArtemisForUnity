@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_IPHONE;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_IPHONE_API;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Artemis_For_Unity\Aspect.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Attributes\ArtemisComponentCreate.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Attributes\ArtemisComponentPool.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Attributes\ArtemisEntitySystem.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Attributes\ArtemisEntityTemplate.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Attributes\AttributesProcessor.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Blackboard\BlackBoard.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Blackboard\SimpleTrigger.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Blackboard\Trigger.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Blackboard\TriggerMultiCondition.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Blackboard\TriggerStateType.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\ComponentMapper.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\ComponentPool.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\ComponentPoolMultiThread.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\ComponentPoolable.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\ComponentType.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Entity.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\EntityWorld.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Exceptions\MissingEntityTemplateException.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Interface\IComponent.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Interface\IComponentPool.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Interface\IEntityTemplate.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Manager\AddedComponentHandler.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Manager\AddedEntityHandler.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Manager\ComponentTypeManager.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Manager\EntityManager.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Manager\ExecutionType.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Manager\GameLoopType.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Manager\GroupManager.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Manager\QueueManager.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Manager\RemovedComponentHandler.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Manager\RemovedEntityHandler.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Manager\SystemBitManager.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Manager\SystemManager.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Manager\TagManager.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\System\DelayedEntityProcessingSystem.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\System\DelayedEntitySystem.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\System\EntityComponentProcessingSystem.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\System\EntityProcessingSystem.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\System\EntitySystem.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\System\HybridQueueSystemProcessing.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\System\IntervalEntityProcessingSystem.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\System\IntervalEntitySystem.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\System\IntervalTagSystem.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\System\ProcessingSystem.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\System\QueueSystemProcessing.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\System\QueueSystemProcessingThreadSafe.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\System\TagSystem.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Utils\Bag.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Utils\BagEnumerator.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Utils\FastDateTime.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Utils\MetroCompatibilityExtensions.cs" />
+     <Compile Include="Assets\Artemis_For_Unity\Utils\Timer.cs" />
+     <Compile Include="Assets\Scripts\Main.cs" />
+     <Compile Include="Assets\Scripts\TestComp1.cs" />
+     <Compile Include="Assets\Scripts\TestProcessor.cs" />
+     <Compile Include="Assets\Scripts\TestProcessor2.cs" />
+     <None Include="Assets\Artemis_For_Unity\LICENSE.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
